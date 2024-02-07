@@ -2,7 +2,7 @@
 
 A web based Midi MPC app to connect with DAW,
 
-* few easy steps to follow *
+*few easy steps to follow*
 - Just open the app
 - connect with your PC 🔌
 - enable the MIDI from android developer settings ⚙
