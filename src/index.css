@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .mpc-block-btn { 
+        @apply border-2 border-neutral-800 dark:border-neutral-200 text-black dark:text-white lg:p-10 sm:p-6 p-4 rounded lg:text-3xl sm:text-xl text-lg transition-all duration-150;
+    }
+    .mpc-block-btn:active{
+        @apply bg-slate-100 dark:bg-gray-900;
+    }
+}
