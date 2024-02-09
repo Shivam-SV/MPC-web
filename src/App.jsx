@@ -7,7 +7,7 @@ function App() {
   WebMidi.enable().then(function(){
     setOutputs(WebMidi?.outputs[0] || []);
   });
-  if(outputs.length == 0){
+  if(outputs.length != 0){
     return <NoConnection />
   }else{
     return <MPC outputs={outputs} midi={WebMidi} />
