@@ -5,7 +5,7 @@ const defaultKeyMappings = [
         key: "C3",
         positionAt:1,
         color: 'red',
-        colorClasses: `active:bg-red-100 active:dark:bg-red-900`
+        colorClasses: `btn-red`
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const defaultKeyMappings = [
         key: "C#3",
         positionAt:2,
         color: 'orange',
-        colorClasses: `active:bg-orange-100 active:dark:bg-orange-900`
+        colorClasses: `btn-orange`
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const defaultKeyMappings = [
         key: "D3",
         positionAt:3,
         color: 'amber',
-        colorClasses: `active:bg-amber-100 active:dark:bg-amber-900`
+        colorClasses: `btn-amber`
     },
     {
         id: 4,
@@ -29,7 +29,7 @@ const defaultKeyMappings = [
         key: "D#3",
         positionAt:4,
         color: 'yellow',
-        colorClasses: `active:bg-yellow-100 active:dark:bg-yellow-900`
+        colorClasses: `btn-yellow`
     },
     {
         id: 5,
@@ -37,7 +37,7 @@ const defaultKeyMappings = [
         key: "E3",
         positionAt:5,
         color: 'lime',
-        colorClasses: `active:bg-lime-100 active:dark:bg-lime-900`
+        colorClasses: `btn-lime`
     },
     {
         id: 6,
@@ -45,15 +45,15 @@ const defaultKeyMappings = [
         key: "F3",
         positionAt:6,
         color: 'green',
-        colorClasses: `active:bg-green-100 active:dark:bg-green-900`
+        colorClasses: `btn-green`
     },
     {
         id: 7,
         name: 'Tamborin',
         key: "F#3",
         positionAt:7,
-        color: 'emeraid',
-        colorClasses: `active:bg-emeraid-100 active:dark:bg-emeraid-900`
+        color: 'emerald',
+        colorClasses: `btn-emerald`
     },
     {
         id: 8,
@@ -61,7 +61,7 @@ const defaultKeyMappings = [
         key: "G3",
         positionAt:8,
         color: 'teal',
-        colorClasses: `active:bg-teal-100 active:dark:bg-teal-900`
+        colorClasses: `btn-teal`
     },
     {
         id: 9,
@@ -69,8 +69,11 @@ const defaultKeyMappings = [
         key: "G#3",
         positionAt:9,
         color: 'cyan',
-        colorClasses: `active:bg-cyan-100 active:dark:bg-cyan-900`
+        colorClasses: `btn-cyan`
     },
 ];
 
-export default defaultKeyMappings;
+const octaves = [...Array(9).keys()];
+const keys = Array.from(['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B']);
+
+export {defaultKeyMappings, octaves, keys};
