@@ -4,7 +4,7 @@ import { HTML5Backend } from "react-dnd-html5-backend";
 import { useDrag, useDrop } from "react-dnd";
 import { useRef, useState } from "react";
 import { TouchBackend } from 'react-dnd-touch-backend';
-const defaultNotePlayDuration = 50;
+const defaultNotePlayDuration = 1;
 
 function MPCBlock({button, tuneMode, swapPositions, ChangeKey, onPress}){
     const ref = useRef(null);
@@ -78,10 +78,11 @@ function MPC({outputs, midi}){
     }
     const playNote = (note) => {
         if(midi != undefined && midi.outputs.length > 0){
-            midi.outputs[0].playNote(note);
-            setTimeout(() => {
-                midi.outputs[0].stopNote(note);
-            }, defaultNotePlayDuration);
+            midi.outputs[0].playNote(note, {duration: 5, velocity: .5});
+            // midi.outputs[0].stopNote(note);
+            // setTimeout(() => {
+                
+            // }, defaultNotePlayDuration);
         }
     }
 
