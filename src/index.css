@@ -4,33 +4,33 @@
 
 @layer components{
     .mpc-block-btn { 
-        @apply border-2 border-neutral-800 dark:border-neutral-200 text-black dark:text-white lg:p-10 sm:p-6 p-4 rounded lg:text-3xl sm:text-xl text-lg transition-all duration-150;
+        @apply border-2 border-neutral-800 dark:border-neutral-200 text-black dark:text-white lg:p-10 sm:p-6 p-4 rounded lg:text-3xl sm:text-xl text-lg transition-all duration-75;
     }
     .btn-red:active:not(:disabled){
-        @apply bg-red-100
+        @apply bg-red-100 dark:bg-red-600
     }
     .btn-orange:active:not(:disabled){
-        @apply bg-orange-100
+        @apply bg-orange-100 dark:bg-orange-600
     }
     .btn-amber:active:not(:disabled){
-        @apply bg-amber-100
+        @apply bg-amber-100 dark:bg-amber-600
     }
     .btn-yellow:active:not(:disabled){
-        @apply bg-yellow-100
+        @apply bg-yellow-100 dark:bg-yellow-600
     }
     .btn-lime:active:not(:disabled){
-        @apply bg-lime-100
+        @apply bg-lime-100 dark:bg-lime-600
     }
     .btn-green:active:not(:disabled){
-        @apply bg-green-100
+        @apply bg-green-100 dark:bg-green-600
     }
     .btn-emerald:active:not(:disabled){
-        @apply bg-emerald-100
+        @apply bg-emerald-100 dark:bg-emerald-600
     }
     .btn-teal:active:not(:disabled){
-        @apply bg-teal-100
+        @apply bg-teal-100 dark:bg-teal-600
     }
     .btn-cyan:active:not(:disabled){
-        @apply bg-cyan-100
+        @apply bg-cyan-100 dark:bg-cyan-600
     }
 }

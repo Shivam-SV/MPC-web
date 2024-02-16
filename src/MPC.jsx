@@ -3,8 +3,8 @@ import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import { useDrag, useDrop } from "react-dnd";
 import { useRef, useState } from "react";
-
-const defaultNotePlayDuration = 200;
+import { TouchBackend } from 'react-dnd-touch-backend';
+const defaultNotePlayDuration = 50;
 
 function MPCBlock({button, tuneMode, swapPositions, ChangeKey, onPress}){
     const ref = useRef(null);
@@ -86,7 +86,7 @@ function MPC({outputs, midi}){
     }
 
     return (
-        <DndProvider backend={HTML5Backend}>
+        <DndProvider backend={TouchBackend}>
             <div className="flex items-center p-2">
                 <h2 className="grow text-lg font-medium dark:text-white">MPC Web</h2>
                 <label className="relative inline-flex items-center cursor-pointer">
